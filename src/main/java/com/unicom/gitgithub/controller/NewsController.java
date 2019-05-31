@@ -16,6 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping (value = "news")//拦截一级路径
 public class NewsController {
+
+    // 子注解，更细节的拦截：@GetMapping @PostMappling @PutMapping @DeleteMapping
     @RequestMapping(value = "getAll")//拦截二级路径
     public List<News> getAll(){
         News news1= new News(1,"aaa1","cccccccc111");
